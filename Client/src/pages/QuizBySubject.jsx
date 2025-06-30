@@ -11,7 +11,7 @@ const QuizBySubject = () => {
     const quizSubject=async()=>{
          
         try {
-            const res=await axios.get(`${apiUrl}/subject/${subject}`,{
+            const res=await axios.get(`${apiUrl}/api/v1/subject/${subject}`,{
         withCredentials: true
       })
           //  console.log(res.data);

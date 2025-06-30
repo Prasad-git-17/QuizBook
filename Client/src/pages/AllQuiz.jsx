@@ -12,11 +12,11 @@ const AllQuiz = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const quizData = await axios.get(`${apiUrl}/subject/${subject}`,{
+        const quizData = await axios.get(`${apiUrl}/api/v1/subject/${subject}`,{
           withCredentials:true
         })
        // console.log(quizData.data)
-        
+        //axios.get(`${apiUrl}/api/v1/subject/${subject}`)
         setQuiz(quizData.data.subjectQuiz) 
 
       } catch (error) {

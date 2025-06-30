@@ -10,7 +10,7 @@ const Dashboard = () => {
         
      const adminFun=async()=>{
       try {
-        const adminData=await axios.get(`${apiUrl}/getQueById/${id}`,{
+        const adminData=await axios.get(`${apiUrl}/api/v1/getQueById/${id}`,{
         withCredentials: true
       })
        // console.log(adminData.data);
@@ -35,7 +35,7 @@ const Dashboard = () => {
 
     const handleDelete =async(id)=>{
         try {
-          const deleteTest= await axios.delete(`${apiUrl}/deleteQuiz/${id}`,{
+          const deleteTest= await axios.delete(`${apiUrl}/api/v1/deleteQuiz/${id}`,{
         withCredentials: true
       })
           //console.log(deleteTest.data);

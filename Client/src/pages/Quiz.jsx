@@ -44,7 +44,7 @@ const Quiz = () => {
 
     const getTest = async () => {
       try {
-        const testData = await axios.get(`${apiUrl}/getTestByTestId/${id}`, {
+        const testData = await axios.get(`${apiUrl}/api/v1/getTestByTestId/${id}`, {
           withCredentials: true
         })
         // console.log(testData.data)

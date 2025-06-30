@@ -25,7 +25,7 @@ const dispatch=useDispatch()
       password: password
     }
     try {
-      const loginRes = await axios.post(`${apiUrl}/user/login`, logIndata, {
+      const loginRes = await axios.post(`${apiUrl}/api/v1/user/login`, logIndata, {
         withCredentials: true
       })
       console.log(loginRes.data.message);

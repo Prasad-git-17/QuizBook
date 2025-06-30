@@ -119,7 +119,7 @@ const AddQuiz = () => {
 
       } else {
   
-        const uplode = await axios.post(`${apiUrl}/postQuiz`, quiz, {
+        const uplode = await axios.post(`${apiUrl}/api/v1/postQuiz`, quiz, {
           withCredentials: true
         })
         console.log(quiz);

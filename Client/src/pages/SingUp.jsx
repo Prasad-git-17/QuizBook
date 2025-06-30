@@ -20,7 +20,7 @@ const SingUp = () => {
         console.log(singUpData);
         
         try {
-            const singUpRes= await axios.post(`${apiUrl}/user/signUp`,singUpData,{
+            const singUpRes= await axios.post(`${apiUrl}/api/v1/user/signUp`,singUpData,{
               withCredentials:true
             })
              console.log(singUpRes.data);
