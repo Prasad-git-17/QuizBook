@@ -193,7 +193,7 @@ const Quiz = () => {
           <div className={`hidden md:block border md:col-span-2 `}>
             {test.map((data, index) => {
               return <button key={index} className={`${queIndex == index ? 'bg-blue-400 text-white font-bold' : ''} border  m-1 w-8 p-1 text-md rounded`}
-                onClick={() => { setQueIndex(index) }}
+                onClick={() => { handleNavigation(index)}}
               >{index + 1}</button>
 
             })}
