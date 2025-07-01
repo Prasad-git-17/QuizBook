@@ -38,7 +38,7 @@ const QuizBySubject = () => {
        <h1 className='text-center text-2xl font-bold'>{subject}</h1>
        <div>
         <div >
-          {quiz?.map((data,index)=>{
+          {quiz.map((data,index)=>{
             return <div key={index} className='flex justify-between items-center border m-3'>
                 <div className='ml-4 '>
             <h1 className='text-xl font-semibold'>{data.title}</h1>
