@@ -21,12 +21,12 @@ const Score = () => {
       <div className=' p-1 border mt-2 mb-2'>
         <h1 className=' font-semibold text-lg  text-green-600'>Score : {totalScore}</h1>
         <h1 className=' font-semibold text-lg '>Total Questions : {queData.allQuestion.length}</h1>
-        <h1 className=' font-semibold text-lg ' >Percentage : {`${totalScore/queData.allQuestion.length*100} %`}</h1>
+        <h1 className=' font-semibold text-lg ' >Percentage : {`${(totalScore/queData.allQuestion.length*100).toFixed(2)} %`}</h1>
       </div>
       <h1 className='font-semibold text-lg mb-4'> All questions</h1>
       <div className=' p-3 border-1 mt-2 '>
         {queData.allQuestion.map((data,index)=>{
-            return <div key={index} className='mb-2 border-b-1'>
+            return <div key={index} className='mb-2 border-b-1'>   
           <h1>Que {index +1} : {data.question}</h1>
           <ul>
             <li>{`1) ${data.options[0]}`}</li>
