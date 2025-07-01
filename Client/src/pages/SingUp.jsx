@@ -17,13 +17,13 @@ const SingUp = () => {
             password:password,
             role:'user'
         }
-        console.log(singUpData);
+       // console.log(singUpData);
         
         try {
             const singUpRes= await axios.post(`${apiUrl}/api/v1/user/signUp`,singUpData,{
               withCredentials:true
             })
-             console.log(singUpRes.data);
+             //console.log(singUpRes.data);
              if(singUpRes.data.success===true){
                navigate('/allQuiz')
              }

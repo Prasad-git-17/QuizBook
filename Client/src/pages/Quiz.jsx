@@ -123,14 +123,14 @@ const Quiz = () => {
       localStorage.removeItem('ind')
     }
     navigate('/score')
-    console.log('your quiz score is', total);
+   // console.log('your quiz score is', total);
   }
 
 
   const handleNavigation=(index)=>{
      setQueIndex(index)
      setColor(5)
-     console.log(color);
+   //  console.log(color);
      
   }
 

@@ -7,10 +7,10 @@ const Score = () => {
      const ansData=useSelector((state)=>state.Quiz.MasterAns)
      const queData=useSelector((state)=>state.Quiz.MasterData)
      const totalScore=useSelector((state)=>state.Quiz.totalScore)
-     console.clear()
-     console.log(ansData);
-     console.log(queData);
-     console.log(queData.allQuestion);
+     //console.clear()
+     //console.log(ansData);
+     //console.log(queData);
+     //console.log(queData.allQuestion);
      
      
      
