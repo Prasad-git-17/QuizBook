@@ -52,7 +52,8 @@ const QuizBySubject = () => {
 
             </div>
           })
-          }
+          || <div className='flex justify-center items-center h-[40vh]'
+          ><h1 className='test-2xl text-red-600 font-bold'>Loading.......</h1></div>}
           {/* <div className='ml-4 '>
             <h1 className='text-2xl font-semibold'>Title of quiz</h1>
             <h1 className='mt-1 mb-1'>Total Quetion 25 || Total marks 25</h1>
