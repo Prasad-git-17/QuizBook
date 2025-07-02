@@ -33,7 +33,7 @@ const QuizBySubject = () => {
 
     },[subject])
   return (
-    <div className='h-[45vh] sm:min-h-[80vh]'>
+    <div className='min-h-screen'>
       <div>
        <h1 className='text-center text-2xl font-bold'>{subject}</h1>
        <div>
