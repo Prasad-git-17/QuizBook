@@ -43,7 +43,7 @@ const QuizBySubject = () => {
     <div key={index} className='flex justify-between items-center border m-3'>
       <div className='ml-4'>
         <h1 className='text-xl font-semibold'>{data.title}</h1>
-        <h1 className='mt-1 mb-1 text-sm'>Total Question 25 || Total marks 25</h1>
+        <h1 className='mt-1 mb-1 text-sm'>Total Question  {data.allQuestion.length} || Total marks  {data.allQuestion.length}</h1>
       </div>
       <div className='mr-4'>
         <button
