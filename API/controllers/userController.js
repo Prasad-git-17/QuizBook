@@ -60,7 +60,7 @@ export const userLogin =async(req,res)=>{
       maxAge:3600000
      })
 
-     res.json({success:true,message:'login success',role:user.role ,userId:user._id})
+     res.json({success:true,message:'Login success',role:user.role ,userId:user._id})
 
     } catch (error) {
          console.log('error happns during logged in  user');
@@ -92,6 +92,6 @@ export const logOut=async(req,res)=>{
       maxAge:3600000
      }
     )
- return res.json({message:'looged out successfully'})
+ return res.json({message:'logged out successfully'})
 
 }

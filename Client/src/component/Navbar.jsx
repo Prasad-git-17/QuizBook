@@ -23,7 +23,7 @@ const Navbar = () => {
             const logOut = await axios.post(`${apiUrl}/api/v1/user/logOut`, {}, {
                 withCredentials: true
             })
-            console.log(logOut.data.message);
+            alert(logOut.data.message);
             navigate('/')
             dispatch(checkLogIn(false))
             dispatch(checkUser('guest'))
