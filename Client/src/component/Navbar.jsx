@@ -74,7 +74,7 @@ const Navbar = () => {
                     <li className='m-1 font-semibold cursor-pointer hover:text-blue-600 '><Link to={'/allQuiz'}>ALLQuizs</Link></li>
                     <li className='m-1 font-semibold cursor-pointer hover:text-blue-600 '><Link to={'/about'}>About</Link></li>
                     <li className='m-1 font-semibold cursor-pointer hover:text-blue-600  '><Link to={'/contact'}>Contact</Link></li>
-                    <li className={` ${userRole === "admin" ? 'block' : 'hidden'} m-2 font-semibold cursor-pointer hover:text-blue-600 `}><Link to={'/addQuiz'}>Dashboared</Link></li>
+                    <li className={` ${userRole === "admin" ? 'block' : 'hidden'} m-2 font-semibold cursor-pointer hover:text-blue-600 `}><Link to={`/dashboard/${userId}`}>Dashboared</Link></li>
                 </ul>
             </div>
         </div>
